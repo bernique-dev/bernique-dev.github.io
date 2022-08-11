@@ -10,9 +10,9 @@
     --dark-mode-bg-color: #303030;
 
     --light-blue-color: #3f76ce;
-    --dark-blue-color: #244c8b;
+    --dark-blue-color: #5182a8;
 
-    --font-family: "Roboto";
+    --font-family: "Lato";
 }
 
 
@@ -47,11 +47,12 @@ body.dark {
     color: var(--light-mode-bg-color);
 }
 
-#username {
-    font-family: "KenneyMiniSquare";
+#username a {
+    font-family: var(--font-family);
     text-transform: uppercase;
     font-size: 30px;
     color: white;
+    text-decoration: none;
 }
 
 
@@ -129,4 +130,26 @@ nav * {
 #pages.dark li:hover {
     background-color: var(--dark-mode-bg-color);
     color: var(--light-mode-bg-color);
+}
+
+#language-changers {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex:auto;
+    list-style: none;
+    
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.language-changer {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.language:not(.visible) {
+    display: none;
 }
