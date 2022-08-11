@@ -115,6 +115,10 @@ nav * {
     flex-direction: column;
 }
 
+#pages a {
+    width: 100%;
+}
+
 #pages li {
     cursor: pointer;
     width: 100%;
