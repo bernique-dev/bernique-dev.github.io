@@ -1,14 +1,16 @@
 $(document).ready(function () {
-    showLanguage('en')
-    $.get("https://ipinfo.io", function(response) {
-        if (response.country = 'FR') {
-            showLanguage('fr')
-        } else {
-            showLanguage('en')
-        }
-    }, "jsonp");
-
-
+    if (document.cookie != '') {
+        language = document.cookie.split('=')[1]
+        showLanguage(language)
+    } else {
+        $.get("https://ipinfo.io", function(response) {
+            if (response.country = 'FR') {
+                showLanguage('fr')
+            } else {
+                showLanguage('en')
+            }
+        }, "jsonp");
+    }
     
     $('.language-changer').click(function (e) {
         showLanguage($(e.target).attr('language'))
