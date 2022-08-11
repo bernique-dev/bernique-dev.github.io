@@ -73,6 +73,8 @@ nav.dark {
 
 nav * {
     margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
 }
 
 #logo_and_username {
