@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --left-offset: 200px;
+
+    --light-mode-bg-color: white;
+    --dark-mode-bg-color: #303030;
+
+    --light-blue-color: #3f76ce;
+    --dark-blue-color: #244c8b;
+
+    --font-family: "Roboto";
+}
+
+
+@font-face {
+    font-family: KenneyMiniSquare;
+    src: url("../fonts/Kenney Mini Square.ttf");
+}
+@font-face {
+    font-family: KenneyFutureNarrow;
+    src: url("../fonts/KENNEY\ FUTURE\ NARROW.TTF");
+}
+@font-face {
+    font-family: KenneyFuture;
+    src: url("../fonts/KENNEY\ FUTURE.TTF");
+}
+@font-face {
+    font-family: KenneyHigh;
+    src: url("../fonts/KENNEY\ HIGH.TTF");
+}
+@font-face {
+    font-family: KenneyHighSquare;
+    src: url("../fonts/KENNEY\ HIGH\ SQUARE.TTF");
+}
+
+body {
+    color: var(--dark-mode-bg-color);
+    background-color: var(--light-mode-bg-color);
+}
+
+body.dark {
+    background-color: var(--dark-mode-bg-color);
+    color: var(--light-mode-bg-color);
+}
+
+#username {
+    font-family: "KenneyMiniSquare";
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+}
+
+
+nav, #content {
+    font-family: var(--font-family);
+}
+
+nav {
+    position: fixed;
+    background-color: var(--light-blue-color);
+    width: var(--left-offset);
+    height: 100%;
+}
+
+nav.dark {
+    background-color: var(--dark-blue-color);
+}
+
+nav * {
+    margin-bottom: 15px;
+}
+
+#logo_and_username {
+    width: 150px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#logo_and_username * {
+    width: 150px;
+}
+
+#content-container {
+    margin-left: calc(var(--left-offset) + 25px);
+    padding-top: 15px;
+    padding-right: 25px;
+}
+
+#content {
+    outline: solid 2px var(--dark-mode-bg-color);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#content.dark {
+    outline-color: var(--light-mode-bg-color);
+}
+
+#pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#pages li {
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    list-style: none;
+    color: white;
+}
+
+#pages li:hover {
+    background-color: var(--light-mode-bg-color);
+    color: var(--light-blue-color);
+}
+
+#pages.dark li:hover {
+    background-color: var(--dark-mode-bg-color);
+    color: var(--light-mode-bg-color);
+}
