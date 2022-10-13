@@ -64,9 +64,9 @@ nav #nav_images * {
 
 
 #language_box .selected * {
-    /* text-decoration: underline; */
-    background-color: white;
-    color: var(--dark-blue);    
+    text-decoration: underline;
+    /* background-color: white; */
+    /* color: var(--dark-blue);     */
 }
 
 a {
