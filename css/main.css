@@ -51,14 +51,17 @@ nav #nav_images * {
 
 #language_box {
     position: relative;
+    margin-left: auto; 
+    margin-right: 0;
     display: flex;
     gap: 5px;
     flex: auto;
     flex-direction: row;
-    justify-content: center;
+    justify-content: right;
     align-content: stretch;
     align-items: center;
 }
+
 
 #language_box .selected * {
     /* text-decoration: underline; */
