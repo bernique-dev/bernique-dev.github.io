@@ -4,14 +4,16 @@ var en = {
     code: 'en',
     about: 'About',
     tools: 'Tools',
-    games: 'Games'
+    games: 'Games',
+    contact: 'Contact'
 };
 
 var fr = {
     code: 'fr',
     about: 'Présentation',
     tools: 'Outils',
-    games: 'Jeux'
+    games: 'Jeux',
+    contact: 'Contact'
 };
 
 function setLanguage(lang) {
@@ -42,4 +44,5 @@ function translateTexts() {
     $('#about').text(language.about);
     $('#tools').text(language.tools);
     $('#games').text(language.games);
+    // $('#contact').text(language.contact);
 }
