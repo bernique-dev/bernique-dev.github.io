@@ -25,7 +25,7 @@ nav ul {
     justify-content: center;
     align-items: center;
     
-    padding: 20px 10%;
+    padding: 20px 20%;
 }
 
 nav li {
@@ -35,10 +35,19 @@ nav li {
     text-transform: uppercase;
 }
 
-nav img {
+nav #nav_images {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 75px;
 }
+
+nav #nav_images * {
+    width: 100px;
+}
+
 
 #language_box {
     position: relative;
@@ -51,8 +60,10 @@ nav img {
     align-items: center;
 }
 
-#language_box .selected {
-    text-decoration: underline;
+#language_box .selected * {
+    /* text-decoration: underline; */
+    background-color: white;
+    color: var(--dark-blue);    
 }
 
 a {
