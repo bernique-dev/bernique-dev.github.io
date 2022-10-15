@@ -4,19 +4,43 @@
     --blue: #4B799D;
     --dark-blue: #3C5E7C;
     
-
+    --background-color: var(--blue);
+    --text-color: white;
+    
+    background-color: var(--background-color);
 }
 
+
 * {
-    color: white;
-    background-color: var(--dark-blue);
     font-family: "Lato";
     margin: 0;
     padding: 0;
 }
 
-nav {
-    width: 100%;
+nav ul {
+    animation: nav_movement .5s normal;
+}
+
+#content-container {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+nav, nav a, #content {
+    color: var(--text-color);
+}
+
+#content {
+    text-align: center;
+    animation: content_movement 1.25s normal;
+}
+
+#content * {
+    animation: content_opacity 1s normal;
+}
+
+#content img {
+    width: 75%;
 }
 
 nav ul {
@@ -69,6 +93,11 @@ nav #nav_images * {
     /* color: var(--dark-blue);     */
 }
 
+
 a {
     text-decoration: none;
+}
+
+#nav_logo, nav a {
+    animation: nav_logo 2s ;
 }

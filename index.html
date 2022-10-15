@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/language.js"></script>
     <link rel="icon" type="image/png" href="images/logo-scaled-transparent-no-shadow.png">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -15,8 +16,8 @@
         <nav>
             <ul>
                 <div id="nav_images">
-                    <a href="#"><img id="nav_logo" src="images/logo-scaled-transparent-no-shadow.png"></a>
-                    <!-- <img id="nav_name" src="images/name_transparent-scaled.png"> -->
+                    <a href="#"><img id="nav_logo" src="images/logo-scaled-transparent.png"></a>
+                    <!-- <a href="#"><img id="nav_logo" src="images/logo-scaled-with-circle-bg.png"></a> -->
                 </div>
                 <li><a href="#" id="about"></a></li>
                 <li><a href="#" id="tools"></a></li>
@@ -24,15 +25,23 @@
                 <!-- <li><a href="#" id="contact"></a></li> -->
                 <li id="language_box_container">
                     <div id="language_box">
-                        <a href="#" onclick="setLanguage('fr')" class="fr"><p>FR</h1></p>
-                        <a href="#" onclick="setLanguage('en')" class="en"><p>EN</h1></p>
+                        <a href="#" onclick="setLanguage('fr')" class="fr"><p>FR</h1></p></a>
+                        <a href="#" onclick="setLanguage('en')" class="en"><p>EN</h1></p></a>
                     </div>
                 </li>
             </ul>
         </nav>
 
 
-        <p id="text"></p>
+        <div id="content-container">
+            <div id="content">
+                <img src="images/name_transparent-scaled.png">
+                <br><br>
+                <p id="aka"></p>
+                <p id="presentation"></p>
+                <!-- <p id="text"></p> -->
+            </div>
+        </div>
 
     </body>
 </html>

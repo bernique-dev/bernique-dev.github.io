@@ -1,0 +1,23 @@
+@keyframes nav_logo {
+    0% { opacity: 0; }
+    50% { opacity: 25; }
+    100% { opacity: 100; }
+}
+
+@keyframes nav_movement {
+    from {margin-top: -50px;}
+    to {margin-top: 0px;}
+}
+
+
+@keyframes content_opacity {
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    100% { opacity: 100; }
+}
+
+@keyframes content_movement {
+    0% { margin-top: -25px; }
+    25% { margin-top: -25px; }
+    100% { margin-top: 0; }
+}

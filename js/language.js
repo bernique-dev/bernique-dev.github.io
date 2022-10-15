@@ -5,7 +5,9 @@ var en = {
     about: 'About',
     tools: 'Tools',
     games: 'Games',
-    contact: 'Contact'
+    contact: 'Contact',
+    aka: 'I am Bernique aka Nicolas Bertin.',
+    presentation: 'I am  a developer.'
 };
 
 var fr = {
@@ -13,7 +15,9 @@ var fr = {
     about: 'Présentation',
     tools: 'Outils',
     games: 'Jeux',
-    contact: 'Contact'
+    contact: 'Contact',
+    aka: 'Je suis Bernique aka Nicolas Bertin.',
+    presentation: 'Je suis un développeur.'
 };
 
 function setLanguage(lang) {
@@ -40,9 +44,11 @@ $(document).ready(function(){
 });
 
 function translateTexts() {
-    $('#text').text(language.code);
     $('#about').text(language.about);
     $('#tools').text(language.tools);
     $('#games').text(language.games);
+
+    $('#aka').text(language.aka);
+    $('#presentation').text(language.presentation);
     // $('#contact').text(language.contact);
 }
