@@ -93,6 +93,10 @@ nav #nav_images * {
     /* color: var(--dark-blue);     */
 }
 
+#language_box a {
+    cursor: pointer;
+}
+
 
 a {
     text-decoration: none;
