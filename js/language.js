@@ -9,7 +9,14 @@ var en = {
     aka: 'I am Bernique aka Nicolas Bertin.',
     presentation: 'I am  a developer.',
     tools_title: "TOOLS",
-    games_title: "GAMES"
+    games_title: "GAMES",
+    play_link: "PLAY",
+    yahtris_desc1: "Yahtris is a Tetris-like game made for the GTMK Game Jam 2022 by a team of two.",
+    yahtris_desc2: "It takes Tetris' essence by using dice combinations to get the best score possible."
+                    + " However, the dice concept were used to add some features :",
+    yahtris_feature1: "Dice can be rerolled to try to get another value",
+    yahtris_feature2: "Reroll gained every 500 points (max 2)",
+    yahtris_feature3: "Two gamemodes: smaller & slower, bigger and faster"
 };
 
 var fr = {
@@ -21,7 +28,15 @@ var fr = {
     aka: 'Je suis Bernique aka Nicolas Bertin.',
     presentation: 'Je suis un développeur.',
     tools_title: "OUTILS",
-    games_title: "JEUX"
+    games_title: "JEUX",
+    play_link: "JOUER",
+    yahtris_desc1: "Yahtris est un jeu Tetris-like réalisé à deux lors de la GTMK Game Jam 2022 avec comme thème \"Dice\".",
+    yahtris_desc2: "Il reprend l'essence du jeu Tetris en utilisant les combinaisons de dés pour réaliser le meilleur score possible."+
+                    " Cependant, le concept de dés est utilisé pour ajouter quelques petites fonctionnalités :",
+    yahtris_feature1: "Possible de relancer le dé pour tenter d'avoir une autre valeur",
+    yahtris_feature2: "Les relances de dés sont gagnées à chaque tranche de 500 points (max 2)",
+    yahtris_feature3: "Deux modes de jeux: petit et lent, grand et rapide"
+                    
 };
 
 function setLanguage(lang) {
@@ -80,11 +95,26 @@ function translateTexts() {
     insertTranslatedTextIfExists('#tools_title', language.tools_title)
     insertTranslatedTextIfExists('#games_title', language.games_title)
 
+    insertTranslatedTextIfExists('.play_link', language.play_link)
+    insertTranslatedTextIfExists('#yahtris_desc1', language.yahtris_desc1)
+    insertTranslatedHTMLIfExists('#yahtris_desc2', language.yahtris_desc2)
+
+    insertTranslatedTextIfExists('#yahtris_feature1', language.yahtris_feature1)
+    insertTranslatedTextIfExists('#yahtris_feature2', language.yahtris_feature2)
+    insertTranslatedTextIfExists('#yahtris_feature3', language.yahtris_feature3)
 }
 
 function insertTranslatedTextIfExists(selector, text) {
     if ($(selector).length) {
         $(selector).text(text)
+    } else {
+        console.log( selector + " doesn't exist")
+    }
+}
+
+function insertTranslatedHTMLIfExists(selector, text) {
+    if ($(selector).length) {
+        $(selector).html(text)
     } else {
         console.log( selector + " doesn't exist")
     }
