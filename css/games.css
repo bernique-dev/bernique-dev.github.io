@@ -14,9 +14,9 @@
 .game_panel {
     /* height: 100%; */
     width : 30%;
-    border: solid 2px #97b4cb;
+    /* border: solid 2px #97b4cb;
     border-radius: 5px;
-    background-color: var(--light-blue);
+    background-color: var(--light-blue); */
 }
 
 .game_panel h2 {
