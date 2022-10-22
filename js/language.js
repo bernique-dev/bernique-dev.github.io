@@ -47,27 +47,7 @@ var fr = {
 
 function setLanguage(lang) {
     $('.selected').removeClass("selected");
-    switch (lang) {
-        case 'en':
-            language = en
-            var lang_links = $('.lang_link')
-            for (let index = 0; index < lang_links.length; index++) {
-                const lang_link = lang_links[index];
-                $(lang_link).attr('href', $(lang_link).attr('href').split('?')[0]);
-            }
-            break;
-        case 'fr':
-            language = fr
-            var lang_links = $('.lang_link')
-            for (let index = 0; index < lang_links.length; index++) {
-                const lang_link = lang_links[index];
-                if ($(lang_link).attr('href').indexOf('?') < 0) {
-                    $(lang_link).attr('href', $(lang_link).attr('href') + '?lang=' + language.code);
-                }
-            }
-            
-            break;
-    }
+    setCookie('language',language,7)
     $('.' + lang).addClass("selected");
     translateTexts()
 }
@@ -84,34 +64,44 @@ function getLanguage() {
     }
 }
 
+function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    console.log(document.cookie)
+}
 
 $(document).ready(function(){
     getLanguage()
 });
 
 function translateTexts() {
-    insertTranslatedTextIfExists('#about', language.about)
-    insertTranslatedTextIfExists('#tools', language.tools)
-    insertTranslatedTextIfExists('#games', language.games)
+    if (language != undefined) {
+        
+        insertTranslatedTextIfExists('#about', language.about)
+        insertTranslatedTextIfExists('#tools', language.tools)
+        insertTranslatedTextIfExists('#games', language.games)
 
-    insertTranslatedTextIfExists('#aka', language.aka)
-    insertTranslatedTextIfExists('#presentation', language.presentation)
-    insertTranslatedTextIfExists('#contact', language.contact)
+        insertTranslatedTextIfExists('#aka', language.aka)
+        insertTranslatedTextIfExists('#presentation', language.presentation)
+        insertTranslatedTextIfExists('#contact', language.contact)
 
-    insertTranslatedTextIfExists('#tools_title', language.tools_title)
-    insertTranslatedTextIfExists('#games_title', language.games_title)
+        insertTranslatedTextIfExists('#tools_title', language.tools_title)
+        insertTranslatedTextIfExists('#games_title', language.games_title)
 
-    insertTranslatedTextIfExists('.play_link', language.play_link)
-    insertTranslatedTextIfExists('.wip', language.wip)
-    insertTranslatedTextIfExists('#yahtris_desc1', language.yahtris_desc1)
-    insertTranslatedHTMLIfExists('#yahtris_desc2', language.yahtris_desc2)
+        insertTranslatedTextIfExists('.play_link', language.play_link)
+        insertTranslatedTextIfExists('.wip', language.wip)
+        insertTranslatedTextIfExists('#yahtris_desc1', language.yahtris_desc1)
+        insertTranslatedHTMLIfExists('#yahtris_desc2', language.yahtris_desc2)
 
-    insertTranslatedTextIfExists('#yahtris_feature1', language.yahtris_feature1)
-    insertTranslatedTextIfExists('#yahtris_feature2', language.yahtris_feature2)
-    insertTranslatedTextIfExists('#yahtris_feature3', language.yahtris_feature3)
+        insertTranslatedTextIfExists('#yahtris_feature1', language.yahtris_feature1)
+        insertTranslatedTextIfExists('#yahtris_feature2', language.yahtris_feature2)
+        insertTranslatedTextIfExists('#yahtris_feature3', language.yahtris_feature3)
 
-    insertTranslatedTextIfExists('#toxic_trail_desc1', language.toxic_trail_desc1)
-    insertTranslatedTextIfExists('#toxic_trail_desc2', language.toxic_trail_desc2)
+        insertTranslatedTextIfExists('#toxic_trail_desc1', language.toxic_trail_desc1)
+        insertTranslatedTextIfExists('#toxic_trail_desc2', language.toxic_trail_desc2)
+    }
 }
 
 function insertTranslatedTextIfExists(selector, text) {
