@@ -47,17 +47,24 @@ var fr = {
 
 function setLanguage(lang) {
     $('.selected').removeClass("selected");
-    setCookie('language',language,7)
+    setCookie('lang',lang,7)
+    switch (lang) {
+        case "fr":
+            language = fr;
+            break;
+        case "en":
+            language = en;
+            break;
+    }
     $('.' + lang).addClass("selected");
     translateTexts()
 }
 
 function getLanguage() {
     if (language == null) {
-        let searchParams = new URLSearchParams(window.location.search)
-
-        if (searchParams.has('lang')) {
-            setLanguage(searchParams.get('lang'))
+        if (document.cookie.includes('lang')) {
+            const value = ('; '+document.cookie).split(`; lang=`).pop().split(';')[0];
+            setLanguage(value)
         } else {
             setLanguage('en')
         }
