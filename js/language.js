@@ -12,13 +12,13 @@ var en = {
     games_title: "GAMES",
     play_link: "PLAY",
     wip: "WORK IN PROGRESS",
-    yahtris_desc1: "Yahtris is a Tetris-like game made for the GTMK Game Jam 2022 by a team of two.",
+    yahtris_desc1: "Yahtris is a Tetris-like game made for the GTMK Game Jam 2022 (Theme: \"Dice\") by a team of two.",
     yahtris_desc2: "It takes Tetris' essence by using dice combinations to get the best score possible."
                     + " However, the dice concept were used to add some features :",
     yahtris_feature1: "Dice can be rerolled to try to get another value",
     yahtris_feature2: "Reroll gained every 500 points (max 2)",
     yahtris_feature3: "Two gamemodes: smaller & slower, bigger and faster",
-    toxic_trail_desc1: "Toxic Trail is a survival game made for the ZenoJam 5 where you play an exterminator protecting the Holy Lantern against voracious insects."   ,    
+    toxic_trail_desc1: "Toxic Trail is a survival game made for the ZenoJam 5 (Theme: \"Light Attracts Bugs\"). You play an exterminator protecting the Holy Lantern against voracious insects."   ,    
     toxic_trail_desc2: "The exterminator fights these insects by spreading insecticid behind and luring them with small lanterns."            
 };
 
@@ -41,7 +41,7 @@ var fr = {
     yahtris_feature2: "Les relances de dés sont gagnées à chaque tranche de 500 points (max 2)",
     yahtris_feature3: "Deux modes de jeux: petit et lent, grand et rapide",
     toxic_trail_desc: "",
-    toxic_trail_desc1: "Toxic Trail est un jeu de survie réalisé pour la ZenoJam 5 où l'on incarne un exterminateur chargé de protéger la Lanterne Sacrée contre de terribles insectes.",    
+    toxic_trail_desc1: "Toxic Trail est un jeu de survie réalisé pour la ZenoJam 5 avec comme thème \"Light Attracts Bugs\". Vous incarnez un exterminateur chargé de protéger la Lanterne Sacrée contre de terribles insectes.",    
     toxic_trail_desc2: "L'exterminateur combat ces insectes en propageant de l'insecticide derrière lui et en les attirant grâce à ses lanternes"      
 };
 
