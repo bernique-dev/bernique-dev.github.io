@@ -1,9 +1,10 @@
 #game_panels {
     display: flex;
+    
     flex-direction: row;
     gap: 2%;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     position: relative;
     height: 100%;
     margin-top: 10px;
@@ -26,7 +27,7 @@
     color: white;
 }
 
-.game_panel p {
+.game_panel .game_desc {
     text-align: justify;
     text-justify: inter-word;
     margin: 0 10px;
