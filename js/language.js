@@ -19,7 +19,13 @@ var en = {
     yahtris_feature2: "Reroll gained every 500 points (max 2)",
     yahtris_feature3: "Two gamemodes: smaller & slower, bigger and faster",
     toxic_trail_desc1: "Toxic Trail is a survival game made for the ZenoJam 5 where you play an exterminator protecting the Holy Lantern against voracious insects."   ,    
-    toxic_trail_desc2: "The exterminator fights these insects by spreading insecticid behind and luring them with small lanterns."            
+    toxic_trail_desc2: "The exterminator fights these insects by spreading insecticid behind and luring them with small lanterns.",
+    cosmos_path_desc1: "Cosmo's path is short puzzle game where you lead a small astronaut called Cosmo to safety.",
+    cosmos_path_desc2: "Its path is filled by obstacles Cosmo will have to overcome.",
+    castel_desc1: "Castel is a Tower Defense game where you defend your kingdom with multiple types of soldiers against dangerous creatures.",
+    castel_desc2: "The player will use two different types of allies:",
+    castel_ally1: "Soldiers like Knights, Archers, Spearmen, ...",
+    castel_ally2: "Heroes : unique troops who have special abilities"
 };
 
 var fr = {
@@ -42,7 +48,13 @@ var fr = {
     yahtris_feature3: "Deux modes de jeux: petit et lent, grand et rapide",
     toxic_trail_desc: "",
     toxic_trail_desc1: "Toxic Trail est un jeu de survie réalisé pour la ZenoJam 5 où l'on incarne un exterminateur chargé de protéger la Lanterne Sacrée contre de terribles insectes.",    
-    toxic_trail_desc2: "L'exterminateur combat ces insectes en propageant de l'insecticide derrière lui et en les attirant grâce à ses lanternes"      
+    toxic_trail_desc2: "L'exterminateur combat ces insectes en propageant de l'insecticide derrière lui et en les attirant grâce à ses lanternes",
+    cosmos_path_desc1: "Cosmo's path est un court jeu de puzzle où l'on doit amener un jeune astronaute appelé Cosmo à un point sûr.",
+    cosmos_path_desc2: "Les niveaux sont remplis d'obstacles que Cosmo va devoir surpasser.",
+    castel_desc1: "Castel est un jeu de Tower Defense où le joueur défend son royaume contre de dangereuses créatures à l'aide de différentes troupes.",
+    castel_desc2: "Le joueur utilise deux types de troupes:",
+    castel_ally1: "Soldats : troupes standards telles que des Chevalies, Archers, Lanciers, ...",
+    castel_ally2: "Héros : troupes uniques possédant des pouvoirs spéciaux."
 };
 
 function setLanguage(lang) {
@@ -112,6 +124,14 @@ function translateTexts() {
 
     insertTranslatedTextIfExists('#toxic_trail_desc1', language.toxic_trail_desc1)
     insertTranslatedTextIfExists('#toxic_trail_desc2', language.toxic_trail_desc2)
+
+    insertTranslatedTextIfExists('#cosmos_path_desc1', language.cosmos_path_desc1)
+    insertTranslatedTextIfExists('#cosmos_path_desc2', language.cosmos_path_desc2)
+    
+    insertTranslatedTextIfExists('#castel_desc1', language.castel_desc1)
+    insertTranslatedTextIfExists('#castel_desc2', language.castel_desc2)
+    insertTranslatedTextIfExists('#castel_ally1', language.castel_ally1)
+    insertTranslatedTextIfExists('#castel_ally2', language.castel_ally2)
 }
 
 function insertTranslatedTextIfExists(selector, text) {
