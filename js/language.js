@@ -128,6 +128,7 @@ function translateTexts() {
     insertTranslatedTextIfExists('#castel_desc2', language.castel_desc2)
     insertTranslatedTextIfExists('#castel_ally1', language.castel_ally1)
     insertTranslatedTextIfExists('#castel_ally2', language.castel_ally2)
+    }
 }
 
 function insertTranslatedTextIfExists(selector, text) {
