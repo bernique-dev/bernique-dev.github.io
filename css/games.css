@@ -32,9 +32,20 @@
     text-justify: inter-word;
     margin: 0 10px;
 }
+.game_panel li {
+    margin-left: -15px;
+}
 
 .image_thumbnail {
     margin-top: 10px;
+}
+
+.game_panel .wid, .game_panel .widoing {
+    margin-top: 10px;
+}
+
+.game_panel .wid_list {
+    padding-bottom: 20px;
 }
 
 .game_images {
@@ -66,7 +77,11 @@
 
 .game_panel ul {
     padding-top: 10px;
-    padding-left: 50px;
+    padding-left: 30px;
     padding-right: 20px;
     text-align: left;
+}
+
+.game_panel h3 {
+    text-align: center;
 }
