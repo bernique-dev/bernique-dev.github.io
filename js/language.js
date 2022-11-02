@@ -6,7 +6,8 @@ var en = {
     tools: 'Tools',
     games: 'Games',
     contact: 'Contact',
-    presentation: 'I am Nicolas Bertin, I am a French game developer and I make games as a hobby since 2018. I go by Bernique on the Internet. I\'m currently working on a civilisation manager called Nin. I\'m doing a Master\'s degree in Computer Science.',
+    presentation1: 'I am Nicolas Bertin, I am a French game developer and I make games as a hobby since 2018. I go by Bernique on the Internet.',
+    presentation2: 'I\'m currently doing a Master\'s degree in Computer Science and working on a civilisation manager game called Nin.',
     tools_title: "TOOLS",
     games_title: "GAMES",
     play_link: "PLAY",
@@ -38,7 +39,7 @@ var en = {
     widoing: "What I do",
     softwares: "SOFTWARES",
     skills: "SKILLS"
-};
+}
 
 var fr = {
     code: 'fr',
@@ -46,7 +47,8 @@ var fr = {
     tools: 'Outils',
     games: 'Jeux',
     contact: 'Contact',
-    presentation: '',
+    presentation1: 'Je suis Nicolas Bertin, un développeur français de jeux vidéos et je fais des jeux dans mon temps libre depuis 2018. Je porte le pseudonyme de Bernique sur Internet.',
+    presentation2: 'Actuellement, je fais un Master Génie de l\'Informatique Logicielle et travaille dans mon temps libre sur un jeu de gestion de civilisation appelé Nin.',
     tools_title: "OUTILS",
     games_title: "JEUX",
     play_link: "JOUER",
@@ -125,8 +127,8 @@ function translateTexts() {
         insertTranslatedTextIfExists('#tools', language.tools)
         insertTranslatedTextIfExists('#games', language.games)
 
-        insertTranslatedTextIfExists('#aka', language.aka)
-        insertTranslatedTextIfExists('#presentation', language.presentation)
+        insertTranslatedTextIfExists('#presentation1', language.presentation1)
+        insertTranslatedTextIfExists('#presentation2', language.presentation2)
         insertTranslatedTextIfExists('#contact', language.contact)
 
         insertTranslatedTextIfExists('#tools_title', language.tools_title)
