@@ -25,17 +25,17 @@ html, body {
     height:100%;    
 }
 
-nav ul {
-    animation: nav_movement .5s normal;
-}
-
 #content-container {
     margin-left: 7.5%;
     margin-right: 7.5%;
 }
 
-nav, nav a, #content {
+nav, nav a, #content, #socials a {
     color: var(--text-color);
+}
+
+#socials a {
+    text-decoration: underline;
 }
 
 #content {
@@ -49,7 +49,7 @@ nav, nav a, #content {
 }
 
 #content img {
-    width: 60%;
+    width: 50%;
 }
 
 nav ul {
@@ -58,7 +58,9 @@ nav ul {
     justify-content: center;
     align-items: center;
     
-    padding: 20px 20%;
+    padding: 5px 20%;
+    
+    animation: nav_movement .5s normal;
 }
 
 nav li {
@@ -113,4 +115,52 @@ a {
 
 #nav_logo, nav a {
     animation: nav_logo 2s ;
+}
+
+#column-presentation {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 10px;
+}
+
+#presentation-content {
+    padding: 0 25%;
+}
+
+#presentation {
+    text-align: justify;
+}
+
+.presentation-column h3 {
+    margin-bottom: 10px;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+#presentation-column1 {
+    text-align: left;
+}
+
+
+#presentation-column2 {
+    text-align: right;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#contact-mail, #contact-header, #column-presentation {
+    margin-bottom: 10px;
+}
+
+#socials img {
+    width: 40px;
 }

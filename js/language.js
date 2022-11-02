@@ -6,8 +6,7 @@ var en = {
     tools: 'Tools',
     games: 'Games',
     contact: 'Contact',
-    aka: 'I am Bernique aka Nicolas Bertin.',
-    presentation: 'I am a developer.',
+    presentation: 'I am Nicolas Bertin, I am a French game developer and I make games as a hobby since 2018. I go by Bernique on the Internet. I\'m currently working on a civilisation manager called Nin. I\'m doing a Master\'s degree in Computer Science.',
     tools_title: "TOOLS",
     games_title: "GAMES",
     play_link: "PLAY",
@@ -36,7 +35,9 @@ var en = {
     castel_wid1: "Code",
     castel_wid2: "Sound (Soldiers' and Monsters' voices)",
     wid: "What I did",
-    widoing: "What I do"
+    widoing: "What I do",
+    softwares: "SOFTWARES",
+    skills: "SKILLS"
 };
 
 var fr = {
@@ -45,8 +46,7 @@ var fr = {
     tools: 'Outils',
     games: 'Jeux',
     contact: 'Contact',
-    aka: 'Je suis Bernique aka Nicolas Bertin.',
-    presentation: 'Je suis un développeur.',
+    presentation: '',
     tools_title: "OUTILS",
     games_title: "JEUX",
     play_link: "JOUER",
@@ -55,7 +55,7 @@ var fr = {
     yahtris_desc2: "Il reprend l'essence du jeu Tetris en utilisant les combinaisons de dés pour réaliser le meilleur score possible."+
                     " Cependant, le concept de dés est utilisé pour ajouter quelques petites fonctionnalités :",
     yahtris_feature1: "Possible de relancer le dé pour tenter d'avoir une autre valeur",
-    yahtris_feature2: "Les relances de dés sont gagnées à chaque tranche de 500 points (max 2)",
+    yahtris_feature2: "Les relances de dé sont gagnées à chaque tranche de 500 points (max 2)",
     yahtris_feature3: "Deux modes de jeux: petit et lent, grand et rapide",
     yahtris_wid1: "Partie du code (Reconnaissance de combinaisons, compte des points, menus, game \"juice\", lancer de dés)",
     yahtris_wid2: "Visuels",
@@ -75,7 +75,9 @@ var fr = {
     castel_wid1: "Code",
     castel_wid2: "Audio (Voix des soldats et monstres)",
     wid: "Ce que j'ai fait",
-    widoing: "Ce que je fais"
+    widoing: "Ce que je fais",
+    softwares: "LOGICIELS",
+    skills: "COMPÉTENCES"
 };
 
 function setLanguage(lang) {
@@ -160,6 +162,9 @@ function translateTexts() {
         insertTranslatedTextIfExists('#castel_ally2', language.castel_ally2)
         insertTranslatedTextIfExists('#castel_wid1', language.castel_wid1)
         insertTranslatedTextIfExists('#castel_wid2', language.castel_wid2)
+        
+        insertTranslatedTextIfExists('#skills', language.skills)
+        insertTranslatedTextIfExists('#softwares', language.softwares)
     }
 }
 
