@@ -113,7 +113,7 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    console.log(document.cookie)
+    // console.log(document.cookie)
 }
 
 $(document).ready(function(){
@@ -174,7 +174,7 @@ function insertTranslatedTextIfExists(selector, text) {
     if ($(selector).length) {
         $(selector).text(text)
     } else {
-        console.log( selector + " doesn't exist")
+        // console.log( selector + " doesn't exist")
     }
 }
 
@@ -182,6 +182,6 @@ function insertTranslatedHTMLIfExists(selector, text) {
     if ($(selector).length) {
         $(selector).html(text)
     } else {
-        console.log( selector + " doesn't exist")
+        // console.log( selector + " doesn't exist")
     }
 }
