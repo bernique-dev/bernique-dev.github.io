@@ -49,7 +49,7 @@ nav, nav a, #content, #socials a {
 }
 
 #content img {
-    width: 50%;
+    width: 30%;
 }
 
 nav ul {
@@ -154,6 +154,10 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10px;
+}
+
+#contact-content {
+    margin-top: 15px;
 }
 
 #contact-mail, #contact-header, #column-presentation {
