@@ -7,7 +7,7 @@ var en = {
     games: 'Games',
     contact: 'Contact',
     presentation1: 'I am Nicolas Bertin, I am a French game developer and I make games as a hobby since 2019. I go by Bernique on the Internet.',
-    presentation2: 'I\'m currently doing a Master\'s degree in Computer Science and working on a civilisation manager game called Nin.',
+    presentation2: 'I\'m currently doing a Master\'s degree in Software Engineering and working on a civilisation manager game called Nin.',
     tools_title: "TOOLS",
     games_title: "GAMES",
     play_link: "PLAY",
