@@ -29,12 +29,6 @@ var en = {
     cosmos_path_desc2: "The player will indicate with arrows keys the sequence of direction Cosmo will take to get to safety.",
     cosmos_path_wid1: "Code",
     cosmos_path_wid2: "Visuals",
-    castel_desc1: "Castel is a Tower Defense game where you defend your kingdom with multiple types of soldiers against dangerous creatures.",
-    castel_desc2: "The player will use two different types of allies:",
-    castel_ally1: "Soldiers like Knights, Archers, Spearmen, ...",
-    castel_ally2: "Heroes : unique troops who have special abilities",
-    castel_wid1: "Code",
-    castel_wid2: "Sound (Soldiers' and Monsters' voices)",
     wid: "What I did",
     widoing: "What I do",
     softwares: "SOFTWARES",
@@ -70,12 +64,6 @@ var fr = {
     cosmos_path_desc2: "Le joueur doit indiquer une séquence de directions à prendre pour diriger Cosmo vers l'arrivée.",
     cosmos_path_wid1: "Code",
     cosmos_path_wid2: "Visuels",
-    castel_desc1: "Castel est un jeu de Tower Defense où le joueur défend son royaume contre de dangereuses créatures à l'aide de différentes troupes.",
-    castel_desc2: "Le joueur utilise deux types de troupes:",
-    castel_ally1: "Soldats : troupes standards telles que des Chevalies, Archers, Lanciers, ...",
-    castel_ally2: "Héros : troupes uniques possédant des pouvoirs spéciaux.",
-    castel_wid1: "Code",
-    castel_wid2: "Audio (Voix des soldats et monstres)",
     wid: "Ce que j'ai fait",
     widoing: "Ce que je fais",
     softwares: "LOGICIELS",
@@ -157,13 +145,6 @@ function translateTexts() {
         insertTranslatedTextIfExists('#cosmos_path_desc2', language.cosmos_path_desc2)
         insertTranslatedTextIfExists('#cosmos_path_wid1', language.cosmos_path_wid1)
         insertTranslatedTextIfExists('#cosmos_path_wid2', language.cosmos_path_wid2)
-        
-        insertTranslatedTextIfExists('#castel_desc1', language.castel_desc1)
-        insertTranslatedTextIfExists('#castel_desc2', language.castel_desc2)
-        insertTranslatedTextIfExists('#castel_ally1', language.castel_ally1)
-        insertTranslatedTextIfExists('#castel_ally2', language.castel_ally2)
-        insertTranslatedTextIfExists('#castel_wid1', language.castel_wid1)
-        insertTranslatedTextIfExists('#castel_wid2', language.castel_wid2)
         
         insertTranslatedTextIfExists('#skills', language.skills)
         insertTranslatedTextIfExists('#softwares', language.softwares)
